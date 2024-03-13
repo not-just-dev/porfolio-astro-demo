@@ -1,0 +1,17 @@
+---
+import Navigation from "../Navigation/Navigation.astro";
+import "./Header.scss";
+
+interface Props {
+  appTitle: string;
+}
+
+const { appTitle } = Astro.props;
+---
+
+<header class="main-header">
+  <div class="container">
+    <h1>{appTitle}</h1>
+    <Navigation />
+  </div>
+</header>

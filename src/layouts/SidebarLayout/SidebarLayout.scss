@@ -1,0 +1,29 @@
+@use "/src/styles/variables";
+
+.main-sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  background-color: variables.$color-primary;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  header {
+    text-align: center;
+  }
+
+  &__picture {
+    border-radius: 50%;
+    border: 5px solid #333;
+  }
+}
+
+.main-content {
+  margin-left: 300px;
+  padding: 20px;
+}

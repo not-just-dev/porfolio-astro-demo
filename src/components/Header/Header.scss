@@ -1,0 +1,13 @@
+@use "/src/styles/variables";
+
+.main-header {
+  min-height: 50px;
+  background-color: variables.$color-primary;
+  color: #fff;
+
+  > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

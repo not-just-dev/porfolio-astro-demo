@@ -1,0 +1,24 @@
+---
+import Navigation from "@components/Navigation/Navigation.astro";
+import BaseLayout from "../BaseLayout/BaseLayout.astro";
+import "./SidebarLayout.scss";
+---
+
+<BaseLayout>
+  <aside class="main-sidebar">
+    <header>
+      <h2 class="main-sidebar__title">Mario González</h2>
+      <img
+        src="/yo.webp"
+        class="main-sidebar__picture"
+        alt="Me"
+        width="150"
+        height="150"
+      />
+    </header>
+    <Navigation display="vertical" />
+  </aside>
+  <main class="main-content">
+    <slot />
+  </main>
+</BaseLayout>

@@ -1,0 +1,21 @@
+.main-navigation {
+  ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  &--vertical {
+    ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
